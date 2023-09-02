@@ -1,38 +1,118 @@
-.App {
+.login-bg-form {
+  background-image: url("https://st4.depositphotos.com/4431055/21611/i/450/depositphotos_216117946-stock-photo-globe-background-learning-concept.jpg");
+  background-size: 210vh;
+  height: 100vh;
+  border: 2px solid;
+}
+
+.login-form-size {
+  width: 400px;
+  height: 350px;
+  margin-top: 200px;
+  margin-left: 753px;
+  background-color: rgb(89, 16, 33);
+  padding: 30px;
+  opacity: 90%;
+  color: rgb(254, 251, 251);
+  border-radius: 10px;
+  background-image: url("https://www.sagatraining.ca/wp-content/uploads/2018/10/background-images-for-login-form-8.jpg");
+}
+
+.align-text {
+  margin: auto;
+  padding: 20px;
+  opacity: 100%;
+  background-color: #99949a;
+  color: aqua;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mar {
+  background-color:#292a2b;
+  color: #e7f7f8;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-title {
+  background-color: #fafafa;
+  padding-bottom: 0 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hero {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.has-text-centered {
+  text-align: center !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.univercity-section {
+  margin: 20px;
+  padding: 20%;
+  width: auto;
+  height: 200px !important;
+  background-color: aquamarine;
+}
+
+.counts-section {
+  width: auto;
+  height: 200px;
+  background-color: #560000;
+  color: #fafafa;
+}
+
+.counts-section-data {
+  margin-top: 55px;
+}
+
+.columns.is-4 .column .box-item {
+  margin-bottom: 0.5rem;
+}
+
+.boxes-style-2 .box-item {
+  padding: 65px 38px 40px;
+  text-align: inherit;
+}
+
+.scr {
+  width: auto;
+  height: 250px;
+  overflow: auto;
+  padding: 30px 25px 30px 55px !important;
+}
+
+.box-item {
+  background-color: #fff;
+  padding: 60px 30px 50px;
+  text-align: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content,
+.entry-content {
+  font-family: Eau, sans-serif;
+}
+
+.bottom-back-color {
+  height: 35px;
+  color: #fff;
+  background-color: #560000;
 }
