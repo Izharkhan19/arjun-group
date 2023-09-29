@@ -1,175 +1,153 @@
-import { Carousel, Col, Container, Image, Row } from "react-bootstrap";
+import { Card, Carousel, Col, Container, Image, Row } from "react-bootstrap";
 import carosole1 from "../../Assets/images/carosole1.jpg";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <>
+      <Card className="bg-dark text-white">
+        <Container fluid>
+          <Row>
+            <Col xs={12} md={12}>
+              <div className="mar mb-3">
+                <div class="marquee-changes">
+                  <marquee
+                    direction="left"
+                    onmouseover="this.stop()"
+                    onmouseout="this.start()"
+                    scrollamount="6"
+                  >
+                    <a
+                      // href="#"
+                      // target="_blank"
+                      class="marl"
+                      // title="Click here to register"
+                    >
+                      ADMISSION OPEN FOR SESSION
+                      2023-2024.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a
+                      href="#"
+                      // target="_blank"
+                      class="marl"
+                      title="Click here to register"
+                    >
+                      एक भारत श्रेष्ठ भारत --- ( राजस्थान के रंग
+                      )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a
+                      href="#"
+                      // target="_blank"
+                      class="marl"
+                      title="Click here to register"
+                    >
+                      एक भारत श्रेष्ठ भारत --- ( राजस्थान के रंग
+                      )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a
+                      href="#"
+                      // target="_blank"
+                      class="marl"
+                      title="Click here to register"
+                    >
+                      प्रताप विश्वविद्यालय द्वारा आयोजित 'एक भारत श्रेष्ठ भारत'
+                      की पहले दिन की महत्वपूर्ण झलकियाँ ..
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a
+                      href="#"
+                      // target="_blank"
+                      class="marl"
+                      title="Click here to register"
+                    >
+                      WITH THE INSPIRATION OF HON'BLE PM MODI, ARJUN GROUP OF
+                      EDUCATION CELEBRATED " Azaadi Ka Amrit Mahotsava" BY
+                      ORGANIZING TIRANGA RALLY ON 14 AUGUST
+                      2023.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a
+                      href="#"
+                      // target="_blank"
+                      class="marl"
+                      title="Click here to register"
+                    >
+                      INDEPENDENCE DAY 2023
+                      VIDEO...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                    <a
+                      href="#"
+                      // target="_blank"
+                      class="marl"
+                      title="Click here to register"
+                    >
+                      Hon'ble Vice Chancellor Prof. (Dr.) Abhay Kumar address on
+                      Independence Day 2023.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </a>
+                  </marquee>
+                </div>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={9} md={9}>
+              <Carousel style={{ background: "pink" }}>
+                <Carousel.Item>
+                  <img
+                    src={
+                      "https://lh3.googleusercontent.com/p/AF1QipNl2piKLc80WxWs0997ZfqzO3TCeYTc_xJ_57-6=w1080-h608-p-no-v0"
+                    }
+                    width={"100%"}
+                    height={"500px"}
+                    alt=""
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    src={
+                      "https://content3.jdmagicbox.com/comp/kota-rajasthan/u4/9999px744.x744.140419114819.u8u4/catalogue/arjun-group-of-education-itawa-kota-rajasthan-colleges-jjwkqoamp7.jpg"
+                    }
+                    width={"100%"}
+                    height={"500px"}
+                    alt=""
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    src={
+                      "https://images.jdmagicbox.com/comp/junagadh/r9/9999px285.x285.190224175002.b8r9/catalogue/the-future-computer-science-college-keshod-keshod-junagadh-9ecvj6pmlm.jpg?clr="
+                    }
+                    width={"100%"}
+                    height={"500px"}
+                    text="Us."
+                    alt=""
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </Col>
+            <Col xs={3} md={3}>
+              <div className="text-center">
+                <h3> Our Mission</h3>
+                <hr></hr>
+              </div>
+              <h6 className="text-center">
+                Arjun Group commenced its journey in the year 2008, with a
+                mission to provide quality education to the youth of the world.
+                Arjun Group has been providing excellence in education by
+                offering various courses in the diverse streams of Engineering,
+                Management, Pharmacy, Information Technology. Our campus is
+                spread over 100 hundred acres of lush green surroundings, well
+                furnished hostel facilities, boast of modern infrastructure,
+                well equipped libraries and labs. Arjun Group comprises a team
+                of more than 100+ highly qualified faculty members from
+                prestigious institutions like IIT's, IIM's, committed to shape
+                the future of over 10,000 students.
+              </h6>
+            </Col>
+          </Row>
+        </Container>
+      </Card>
       <Container fluid>
-        <Row>
-          <Col className="home-bgImg">
-            {/* <div className="header-manage">
-            <h3>-Future is here with...</h3>
-            <h2>Arjun Group of Education's</h2>
-          </div> */}
-          </Col>
-          <Col className="home-bgImg2 text-center">
-            {/* <img src={edu} className="course-Img text-center" alt="" /> */}
-          </Col>
-        </Row>
-
-        <Row className="align-text">
-          <div className="mar mb-3">
-            {/* <div class="container"> */}
-            <div class="marquee-changes">
-              <marquee
-                direction="left"
-                onmouseover="this.stop()"
-                onmouseout="this.start()"
-                scrollamount="6"
-              >
-                <a
-                  // href="#"
-                  // target="_blank"
-                  class="marl"
-                  // title="Click here to register"
-                >
-                  ADMISSION OPEN FOR SESSION
-                  2023-2024.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-                <a
-                  href="#"
-                  // target="_blank"
-                  class="marl"
-                  title="Click here to register"
-                >
-                  एक भारत श्रेष्ठ भारत --- ( राजस्थान के रंग )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-                <a
-                  href="#"
-                  // target="_blank"
-                  class="marl"
-                  title="Click here to register"
-                >
-                  एक भारत श्रेष्ठ भारत --- ( राजस्थान के रंग
-                  )&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-                <a
-                  href="#"
-                  // target="_blank"
-                  class="marl"
-                  title="Click here to register"
-                >
-                  प्रताप विश्वविद्यालय द्वारा आयोजित 'एक भारत श्रेष्ठ भारत' की
-                  पहले दिन की महत्वपूर्ण झलकियाँ ..
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-                <a
-                  href="#"
-                  // target="_blank"
-                  class="marl"
-                  title="Click here to register"
-                >
-                  WITH THE INSPIRATION OF HON'BLE PM MODI, ARJUN GROUP OF EDUCATION
-                  CELEBRATED " Azaadi Ka Amrit Mahotsava" BY ORGANIZING TIRANGA
-                  RALLY ON 14 AUGUST 2023.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-                <a
-                  href="#"
-                  // target="_blank"
-                  class="marl"
-                  title="Click here to register"
-                >
-                  INDEPENDENCE DAY 2023
-                  VIDEO...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-                <a
-                  href="#"
-                  // target="_blank"
-                  class="marl"
-                  title="Click here to register"
-                >
-                  Hon'ble Vice Chancellor Prof. (Dr.) Abhay Kumar address on
-                  Independence Day 2023.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </a>
-              </marquee>
-            </div>
-            {/* </div> */}
-          </div>
-          <Col xs={9} md={9}>
-            <Carousel style={{ background: "pink" }}>
-              <Carousel.Item>
-                <img
-                  src={
-                    "https://lh3.googleusercontent.com/p/AF1QipNl2piKLc80WxWs0997ZfqzO3TCeYTc_xJ_57-6=w1080-h608-p-no-v0"
-                  }
-                  width={"100%"}
-                  height={"500px"}
-                  alt=""
-                />
-                <Carousel.Caption>
-                  {/* <h3>First slide label</h3>
-                  <p>
-                    Nulla vitae elit libero, a pharetra augue mollis interdum.
-                  </p> */}
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  src={
-                    "https://content3.jdmagicbox.com/comp/kota-rajasthan/u4/9999px744.x744.140419114819.u8u4/catalogue/arjun-group-of-education-itawa-kota-rajasthan-colleges-jjwkqoamp7.jpg"
-                  }
-                  width={"100%"}
-                  height={"500px"}
-                  alt=""
-                />
-                <Carousel.Caption>
-                  {/* <h3>Second slide label</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  </p> */}
-                </Carousel.Caption>
-              </Carousel.Item>
-              <Carousel.Item>
-                <img
-                  src={
-                    "https://images.jdmagicbox.com/comp/junagadh/r9/9999px285.x285.190224175002.b8r9/catalogue/the-future-computer-science-college-keshod-keshod-junagadh-9ecvj6pmlm.jpg?clr="
-                  }
-                  width={"100%"}
-                  height={"500px"}
-                  text="Us."
-                  alt=""
-                />
-                <Carousel.Caption>
-                  {/* <h3>Third slide label</h3>
-                  <p>
-                    Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur.
-                  </p> */}
-                </Carousel.Caption>
-              </Carousel.Item>
-            </Carousel>
-          </Col>
-          <Col xs={3} md={3}>
-            <div className="text-center">
-              <h3> Our Mission</h3>
-              <hr></hr>
-            </div>
-            <h6 className="align-text">
-              Arjun Group commenced its journey in the year 2008, with a mission
-              to provide quality education to the youth of the world. Arjun
-              Group has been providing excellence in education by offering
-              various courses in the diverse streams of Engineering, Management,
-              Pharmacy, Information Technology. Our campus is spread over 100
-              hundred acres of lush green surroundings, well furnished hostel
-              facilities, boast of modern infrastructure, well equipped
-              libraries and labs. Arjun Group comprises a team of more than 100+
-              highly qualified faculty members from prestigious institutions
-              like IIT's, IIM's, committed to shape the future of over 10,000
-              students.
-            </h6>
-          </Col>
-        </Row>
         <hr />
         <Row className="mt-5">
           <div className="text-center mb-5">
@@ -342,10 +320,10 @@ const Home = () => {
                     <div class="column is-4 content">
                       <div class="box-item scr">
                         <h3>
-                          <a href="#">
+                          <Link to={"/certificates"}>
                             <i class="ion-ios-paper-outline"></i> CERTIFICATE
                             COURSES
-                          </a>
+                          </Link>
                         </h3>
                         <ul class="list no-margin no-style list-radio-button-on">
                           <li>RSCIT</li>
@@ -361,10 +339,10 @@ const Home = () => {
                     <div class="column is-4 content">
                       <div class="box-item scr">
                         <h3>
-                          <a href="#">
+                          <Link to="/diploma">
                             <i class="ion-ios-paper-outline"></i> DEPLOMA
                             COURSES
-                          </a>
+                          </Link>
                         </h3>
                         <ul class="list no-margin no-style list-radio-button-on">
                           <li>DCPA</li>
@@ -383,9 +361,9 @@ const Home = () => {
                     <div class="column is-4 content">
                       <div class="box-item scr">
                         <h3>
-                          <a href="#">
+                          <Link to="/ugcourses">
                             <i class="ion-ios-paper-outline"></i> DEGREE COURSES
-                          </a>
+                          </Link>
                         </h3>
                         <ul class="list no-margin no-style list-radio-button-on">
                           <li>BCA</li>

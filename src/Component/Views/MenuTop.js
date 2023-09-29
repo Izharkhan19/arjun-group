@@ -35,42 +35,44 @@ const MenuTop = () => {
               <Nav.Link onClick={() => navigate("/home")}>Home</Nav.Link>
               <Nav.Link onClick={() => navigate("/about")}>About</Nav.Link>
               <NavDropdown title="Education" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
+                <NavDropdown.Item onClick={() => navigate("/certificates")}>
                   Certificate
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Diploma</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item onClick={() => navigate("/diploma")}>
+                  Diploma
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={() => navigate("/ugcourses")}>
                   UG Course
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item onClick={() => navigate("/pgcourses")}>
                   PG Course
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Banking" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">
-                  Certificate
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item onClick={() => navigate("/homeLoan")}>
                   Home Loan
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item onClick={() => navigate("/personalLoan")}>
                   Personal Loan
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item onClick={() => navigate("/propertyLoan")}>
                   Property Loan
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item onClick={() => navigate("/educationLoan")}>
                   Education Loan
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item onClick={() => navigate("/vehicleLoan")}>
                   Vehicle Loan
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#pricing">E-mitra</Nav.Link>
-              <Nav.Link href="#pricing">CSC</Nav.Link>
-              <Nav.Link href="#pricing">Fasttag</Nav.Link>
+              <Nav.Link onClick={() => navigate("/emitra")}>E-mitra</Nav.Link>
+              <Nav.Link onClick={() => navigate("/csc")}>CSC</Nav.Link>
+              <Nav.Link onClick={() => navigate("/fasttag")}>FASTag</Nav.Link>
+
               <NavDropdown title="RKCL" id="collasible-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">RSCIT</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => navigate("/rscit")}>
+                  RSCIT
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="APES" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Rapi pay</NavDropdown.Item>
