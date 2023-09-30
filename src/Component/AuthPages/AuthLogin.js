@@ -8,8 +8,8 @@ import { useNavigate } from "react-router-dom";
 
 function AuthLogin() {
   let authLogin = {
-    userName: "izhar",
-    password: "123",
+    userName: "arjun",
+    password: "group123",
   };
 
   const [authLoginData, setAuthLoginData] = useState({
